@@ -8,7 +8,6 @@ import { WordpressService } from '../../wordpress-service.service';
 })
 export class AllProjectsComponent {
   posts=[];
-  displayPosts=[];
 
   constructor(private wp: WordpressService) { }
 

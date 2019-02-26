@@ -1,3 +1,8 @@
-<p>
-  single-project works!
-</p>
+<main>
+    <div>
+        <img [src]="projectImg" />
+        <a [routerLink]="['/work/'+ categoryName]">all {{this.categoryName}} projects</a>
+    </div>
+    <h2 [innerHTML]="projectTitle"></h2>
+    <div [innerHTML]="projectText"> </div>
+</main>

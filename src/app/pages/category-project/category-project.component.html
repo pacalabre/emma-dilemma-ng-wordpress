@@ -1,3 +1,10 @@
-<p>
-  category-project works!
-</p>
+<main>
+  <a [routerLink]="['/work']">all project categories</a>
+  <ul>
+    <li *ngFor="let post of categoryPosts">
+      <a [routerLink]="['/work', post['_embedded']['wp:term'][0][0].slug, post.slug]">
+        <div [innerHtml]="post.title.rendered"></div>
+      </a>
+    </li>
+  </ul>
+</main>
